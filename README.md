@@ -23,7 +23,7 @@ var config struct {
 }
 
 gofig.RegisterConfigfile('./config.yaml', false)
-2gofig.String(&config.env, 'ENV', 'Application Environment', 'development')
+gofig.String(&config.env, 'ENV', 'Application Environment', 'development')
 gofig.Integer(&config.port, 'SERVER_PORT', 'Server Port', 8080)
 gofig.Parse()
 ```
